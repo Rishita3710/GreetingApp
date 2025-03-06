@@ -1,0 +1,98 @@
+/* styles.css */
+body {
+    background: linear-gradient(to right, #6a0dad, #000000);
+    color: #d1c4e9;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #bb86fc;
+    margin-bottom: 20px;
+  }
+  
+  .input-box {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #bb86fc;
+    background: black;
+    color: #bb86fc;
+    outline: none;
+    margin-bottom: 15px;
+  }
+  
+  .input-box:focus {
+    border-color: #d1c4e9;
+    box-shadow: 0 0 10px #bb86fc;
+  }
+  
+  .greet-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #bb86fc;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .greet-button:hover {
+    background-color: #8a2be2;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px #bb86fc;
+  }
+  
+  .message-box {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #bb86fc;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .animated-box {
+    animation: popEffect 0.6s ease-in-out;
+  }
+  
+  @keyframes popEffect {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
