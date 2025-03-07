@@ -14,15 +14,15 @@ export default function GreetingApp() {
       return;
     }
     try {
-      const response = await fetch(`http://localhost:3000/api/greet?name=${name}`);
+      const response = await fetch(`https://greetingapp-372t.onrender.com/api/greet?name=${name}`);
       const data = await response.json();
       setMessage(data.message || data.error);
       setShowMessage(true);
-      setTimeout(() => setShowMessage(false), 40000);
+      setTimeout(() => setShowMessage(false), 60000);
     } catch (error) {
       setMessage("Error fetching the greeting.");
       setShowMessage(true);
-      setTimeout(() => setShowMessage(false), 40000);
+      setTimeout(() => setShowMessage(false), 60000);
     }
   };
 
