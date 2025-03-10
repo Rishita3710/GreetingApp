@@ -28,7 +28,7 @@ export default function GreetingApp() {
 
   return (
     <div className="container">
-      <h1 className="title">Greeting App</h1>
+      <h1 className="title">Greeting</h1>
       <input
         type="text"
         placeholder="Enter your name"
